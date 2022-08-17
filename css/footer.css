@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/*footer*/
+footer {
+	position: relative;
+	top: 48px;
+	background: linear-gradient(0.25turn, #426F77, #6CA1AA);
+}
+
+footer .footer_inner {
+	padding: 40px 0 8px 0;
+}
+
+footer .footer_inner .footer_logo {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+footer .footer_inner .footer_logo a img {
+	width: 40%;
+}
+
+footer .footer_inner .footer_nav {
+	list-style: none;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+}
+
+footer .footer_inner .footer_nav .nav_cont {
+	width: 33.3%;
+/*	white-space: nowrap;*/
+	padding: 16px 0;
+	text-align: center;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+
+footer .footer_inner .footer_nav .nav_left {
+	border-left: none;
+}
+
+footer .footer_inner .footer_nav .nav_right {
+	border-right: none;
+}
+
+footer .footer_inner .footer_nav .nav_cont a {
+/*
+	display: block;
+	width: 100%;
+	height: 100%;
+*/
+	color: #fff;
+	border-bottom: none;
+/*	white-space: nowrap;*/
+}
+
+footer .footer_inner .footer_nav li .sns {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer .copyright {
+	color: #fff;
+	font-size: .8rem;
+	font-weight: 300;
+	text-align: center;
+	padding: 0 0 16px 0;
+}
+
+/*768px以上*/
+@media screen and (min-width: 768px){
+	footer {
+		top: 80px;
+	}
+	footer .footer_inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 32px 24px 16px;
+	}
+	footer .footer_inner .footer_logo {
+		margin-right: 40px;
+	}
+	footer .footer_inner .footer_logo a img {
+		width: 70%;
+	}
+	footer .footer_inner .footer_nav {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 70%;
+	}
+	footer .footer_inner .footer_nav .nav_cont {
+		height: 16px;
+		border: none;
+		font-size: 0.9rem;
+	}
+	footer .footer_inner .footer_nav .nav_cont a:hover {
+		transition: all 0.5s;
+		border-bottom: 1px solid #fff;
+	}
+	footer .footer_inner .footer_nav .nav_cont .sns {
+		margin-left: 24px;
+		display: flex;
+		align-items: center;
+	}
+	footer .footer_inner .footer_nav .nav_cont .sns li {
+		margin-right: 24px;
+	}
+	footer .footer_inner .footer_nav .nav_cont .sns li:last-child {
+		margin-right: 0;
+	}
+/*
+	footer .footer_inner .footer_nav .nav_cont .sns li a {
+		white-space: nowrap;
+	}
+*/
+	footer .copyright {
+		border-top: 1px solid #fff;
+		padding-top: 16px;
+	}
+}
+
+/*960px以上*/
+@media screen and (min-width: 960px){
+	footer .footer_inner {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}

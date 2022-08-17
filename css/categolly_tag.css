@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.category_tag {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.7rem;
+}
+
+.category_tag li {
+	display: inline-block;
+	white-space: nowrap;
+	box-sizing: border-box;
+	align-items: center;
+	text-align: center;
+	color: #426F77;
+	cursor: pointer;
+	font-weight: 600;
+	background: #fff;
+	padding: 4px 16px;
+	border-radius: 60px;
+	margin: 0 8px 8px 0;;
+	border: 1px solid #426F77;
+}
+
+.category_tag li:hover {
+	background: #cce8ed;
+}
+
+.tag_menu {
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto 24px auto;
+}
+
+
+/* タップできないタグ */
+.category_tag .nottap {
+	cursor: auto;
+}
+
+.category_tag .nottap:hover {
+	background: #fff;
+}
+
+
+@media screen and (min-width:768px) {
+	.tag_menu {
+		margin: 0 auto 56px auto;
+	}
+}
+
+@media screen and (min-width:960px) {
+	.tag_menu {
+		margin: 0 auto 56px auto;
+	}
+}

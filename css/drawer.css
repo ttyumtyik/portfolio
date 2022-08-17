@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 64px;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+header .header_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header_inner .header_logo {
+    margin-left: 2%;
+    transform: translateY(16px);
+}
+
+header .header_inner .header_logo a img {
+    width: 120%;
+}
+
+.nav_box {
+    position: relative;
+}
+
+.nav_box .sns {
+    position: relative;
+    display: flex;
+    transform: translateY(18px);
+    top: 0;
+    right: 64px;
+}
+
+.nav_box .sns div {
+    margin-right: 24px;
+}
+
+.nav_box .sns div a img {
+    width: 120%;
+}
+
+#nav-global {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 240px;
+    height: 100vh;
+    background: #eee;
+    box-shadow: -4px 0 2px rgba(0, 0, 0, .2);
+}
+
+#nav-global ul {
+    list-style: none;
+    padding: 16px;
+}
+
+#nav-global ul li {
+    padding: 16px 0 16px 0;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+#nav-global ul li:first-child {
+    border-bottom: none;
+}
+
+#nav-global ul li input {
+    font-size: 1rem;
+    padding: 0 0 0 8px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #6CA1AA;
+    border-radius: 4px 0 0 4px;
+}
+
+#nav-global ul li .button-search {
+    width: 64px;
+    height: 40px;
+    background: #426F77;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 4px 4px 0;
+    right: 0;
+}
+
+#nav-global ul li a {
+    text-decoration: none;
+    color: #426F77;
+    font-weight: 700;
+}
+
+#hamburger {
+    display: block;
+    position: absolute;
+    background: #426F77;
+    width: 64px;
+    height: 64px;
+    top: 0;
+    right: 0;
+}
+
+#hamburger .hamburger_inner {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+}
+
+#hamburger .inner_line {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all .3s;
+}
+
+#hamburger #line1 {
+    top: -16px;
+}
+
+#hamburger #line3 {
+    top: 16px;
+}
+
+#hamburger p {
+    color: #fff;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.in {
+    transform: translateX(-300px);
+}
+
+.line_1, .line_2, .line_3 {
+    background: #fff;
+}
+
+.line_1 {
+    transform: translateY(16px) rotate(-45deg);
+    top: 0;
+}
+
+.line_2 {
+    opacity: 0;
+}
+
+.line_3 {
+    transform: translateY(-16px) rotate(45deg);
+    bottom: 0;
+}

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+	text-decoration: none;
+	color: #333;
+	list-style: none;
+}
+
+main {
+	position: relative;
+	font-size: 16px;
+	background: #fafafa;
+}
+
+.must_icon {
+	color: #D04000;
+}
+
+.form_inner {
+	padding: 40px 8px;
+	max-width: 560px;
+	margin: 0 auto;
+}
+
+.form_inner form {
+	margin-top: 40px;
+}
+
+.form_inner form ul .form_cont {
+	margin-top: 32px;
+	position: relative;
+}
+
+.form_inner form ul .button_area {
+	display: flex;
+	justify-content: center;
+}
+.form_inner form ul .form_cont:first-child {
+	margin-top: 0;
+}
+.form_inner form ul .form_cont h3 {
+	font-size: 1rem;
+	margin-bottom: 4px;
+}
+.form_inner form ul .form_cont input {
+	border-radius: 4px;
+}
+
+.form_inner form ul .form_cont .text_box {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+}
+.form_inner form ul .form_cont #schedule {
+	width: 100%;
+	padding: 8px 8px 8px 16px;
+	border: 1px solid #ccc;
+	background: url("../image/select_icon.svg") no-repeat;
+	background-position: right 16px bottom 50%;;
+}
+.form_inner form ul li button {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
+	border-radius: 3em;
+	background: linear-gradient(0.25turn, #F0B33F, #D04000);
+	width: 80%;
+	padding: 16px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (min-width: 768px){
+	.form_inner {
+		padding: 40px 24px;
+	}
+}
+
+@media screen and (min-width: 960px){
+	
+}

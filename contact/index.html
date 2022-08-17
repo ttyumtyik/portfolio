@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="robots" content="noindex">
+	<title>Contact｜chan's_portfolio</title>
+	<link rel="icon" type="image/svg+xml" href="../image/logo_favicon.svg">
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/page_title.css">
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+	
+	<main>
+		<div class="page_title">
+			<div class="header_area">
+				<div class="title_text">
+					<img src="image/contact_title.svg" alt="About">
+				</div>
+				<div class="header_illust"></div>
+			</div>
+			<div class="header_desk"></div>
+			<div class="header_bg1"></div>
+			<div class="header_bg2"></div>
+		</div>
+		
+		<div class="form_inner">
+			<p>
+				制作のご依頼・ご相談など、下記よりお気軽にお問い合わせください。
+				下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入をお願いいたします。
+			</p>	
+			<p>
+				※<span class="must_icon">*</span>がついている項目は必須です。<br>
+				※セールスはご遠慮ください。<br>
+				※個人情報保護方針はこちら
+			</p>
+			
+			<form action="" method="post">
+				<ul>
+					<li class="form_cont">
+						<h3>お名前<span class="must_icon">*</span></h3>
+						<input type="text" id="name" name="user_name" class="text_box" placeholder="山田　太郎" required>
+					</li>
+					<li class="form_cont">
+						<h3>貴社名</h3>
+						<input type="text" id="company" name="user_company" class="text_box" placeholder="株式会社〇〇〇〇">
+					</li>
+					<li class="form_cont">
+						<h3>メールアドレス<span class="must_icon">*</span></h3>
+						<input type="email" id="mail" name="user_email" class="text_box" placeholder="chans@sample.com" required>
+					</li>
+					<li class="form_cont">
+						<h3>お電話番号<span class="must_icon">*</span></h3>
+						<input type="tel" id="tel" name="user_tel" class="text_box" placeholder="03-1234-5678" required>
+					</li>
+					<li class="form_cont">
+						<h3>ご相談内容<span class="must_icon">*</span></h3>
+						<p>どのようなことでお悩みですか？</p>
+						<ul>
+							<li>
+								<input type="checkbox" id="web" value="WEBデザイン" name="user_consultation">
+								<label for="web">WEBデザイン</label>
+							</li>
+							<li>
+								<input type="checkbox" id="logo" value="ロゴデザイン" name="user_consultation">
+								<label for="logo">ロゴデザイン</label>
+							</li>
+							<li>
+								<input type="checkbox" id="graphic" value="グラフィックデザイン" name="user_consultation">
+								<label for="graphic">グラフィックデザイン</label>
+							</li>
+							<li>
+								<input type="checkbox" id="leaflet" value="チラシ・ポスターなど" name="user_consultation">
+								<label for="leaflet">チラシ・ポスターなど</label>
+							</li>
+							<li>
+								<input type="checkbox" id="motion" value="動画制作" name="user_consultation">
+								<label for="motion">動画・モーショングラフィックス</label>
+							</li>
+							<li>
+								<input type="checkbox" id="illust" value="イラスト・手書き文字" name="user_consultation">
+								<label for="illust">イラスト・手書き文字</label>
+							</li>
+							<li>
+								<input type="checkbox" id="others" value="その他" name="user_consultation">
+								<label for="others">その他</label>
+							</li>
+						</ul>
+					</li>
+					<li class="form_cont">
+						<h3>ご希望の納期<span class="must_icon">*</span></h3>
+						<div class="select-box">
+							<select name="schedule" id="schedule">
+								<option value="1ヶ月以内">1ヶ月以内</option>
+								<option value="2ヶ月以内">2ヶ月以内</option>
+								<option value="3ヶ月以内">3ヶ月以内</option>
+								<option value="4ヶ月以内">4ヶ月以内</option>
+								<option value="5ヶ月以内">5ヶ月以内</option>
+								<option value="6ヶ月以内">6ヶ月以内</option>
+								<option value="1年以内">1年以内</option>
+								<option value="現時点で未定">現時点で未定</option>
+							</select>
+						</div>
+					</li>
+					<li class="form_cont">
+						<h3>内容詳細<span class="must_icon">*</span></h3>
+						<p>ご相談内容、それ以外の詳しい内容があれば教えてください。</p>
+						<textarea id="msg" name="user_massage" cols="30" rows="10" class="text_box" placeholder="ご相談内容についての詳細をご入力ください"></textarea>
+					</li>
+					<li class="button_area">
+						<button type="submit">内容を送信する</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</main>
+	
+</body>
+</html>

@@ -1,0 +1,19 @@
+@charaset "UTF-8";
+
+* {
+	text-decoration: none;
+}
+
+main {
+	position: relative;
+	top: 48px;
+	font-size: 16px;
+	background: #fafafa;
+}
+
+
+@media screen and (min-width: 768px){
+	main {
+		top: 80px;
+	}
+}
